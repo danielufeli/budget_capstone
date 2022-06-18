@@ -6,6 +6,8 @@ class User < ApplicationRecord
          :confirmable, :lockable, :trackable
   
   has_many :categories, foreign_key: 'author_id', class_name: 'Category'
+  has_many :trans, foreign_key: 'author_id', class_name: 'Tran'
+
   validates :name, presence: true
   validates :email, presence: true
   validates :password, presence: true
