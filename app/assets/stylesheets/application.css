@@ -13,27 +13,48 @@
  *= require_tree .
  *= require_self
  */
+
+@font-face {
+  font-family: "ProximaBold";
+  src: url('ProximaBold.otf') format("truetype");
+  font-size: medium;
+}
+
+@font-face {
+  font-family: "ProximaLight";
+  src: url('ProximaLight.otf') format("truetype");
+  font-weight: lighter;
+}
+
+body {
+  font-family: "ProximaBold", sans-serif;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .next {
   border: none;
   background-color: #3471b6;
   color: white;
-  font-size: medium;
   cursor: pointer;
+  font-size: medium;
 }
 
 .forgot-password {
-  color: #7e7e7e;
-  display: flex;
-  justify-content: center;
+  font-family: "ProximaLight", sans-serif;
+  color: #434b54;
   background-color: #dee0df;
   font-size: small;
   margin-top: 1rem;
 }
 
 .nav {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   list-style-type: none;
   background-color: #3471b6;
   margin: 0;
@@ -50,44 +71,47 @@ a {
 .user {
   height: 2rem;
   background-color: white;
+  padding-left: 1rem;
 }
 
 .container,
 .container-devise {
   background-color: #dee0df;
-}
-
-.container-devise {
   height: 100vh;
 }
 
 .category {
+  font-family: "ProximaLight", sans-serif;
   background-color: white;
-  display: flex;
   margin: 1rem;
   height: 4rem;
   list-style-type: none;
-  align-items: center;
   padding: 0 1rem;
 }
 
 .category-name {
-  margin-left: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-type: none;
+  color: #434b54;
+  font-size: small;
+  padding: 0;
+  height: 4rem;
+  justify-content: space-around;
 }
 
 .total {
+  font-family: "ProximaLight", sans-serif;
   margin-left: auto;
+  color: #434b54;
 }
 
 .btn {
-  background-color: #60b524;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #5fb523;
 }
 
 .splash {
-  background-color: #3979c3;
+  background-color: #3778c2;
 }
 
 .new-category {
@@ -100,6 +124,35 @@ a {
   height: 4rem;
   width: 100%;
   border: none;
+  position: fixed;
+  bottom: 0;
+  font-size: medium;
+}
+
+.item {
+  padding-bottom: 4.5rem;
+  background-color: #dee0df;
+}
+
+.form-category {
+  font-family: "ProximaLight", sans-serif;
+  background-color: white;
+  margin-top: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.form-category>* {
+  font-family: "ProximaLight", sans-serif;
+  width: 100vw;
+  display: block;
+  padding: 0;
+  padding-left: 0.5rem;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  height: 2.5rem;
+  box-sizing: border-box;
+  margin: auto;
+  color: #434b54;
 }
 
 .save-category {
@@ -108,45 +161,24 @@ a {
   border: none;
 }
 
-.form-category {
-  background-color: white;
-  margin-top: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.116);
-}
-
-.form-category>* {
-  width: 95vw;
-  display: block;
-  padding: 0;
-  padding-left: 0.5rem;
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
-  height: 2.5rem;
-  box-sizing: border-box;
-  margin: auto;
-}
-
-.field {
-  display: flex;
-  align-items: center;
-}
-
 .splash-page {
   background-color: white;
   height: 100vh;
 }
 
 .app-name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 70vh;
-  color: #1f262f;
+  color: #434b54;
 }
 
 .splash-signup {
   background-color: white;
-  color: #525151a2;
+  color: #434b54;
+}
+
+.category-transactions {
+  margin: 0 1rem;
+  color: #434b54;
 }
 
 .icon-size {

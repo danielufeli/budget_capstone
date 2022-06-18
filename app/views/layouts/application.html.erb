@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myapp</title>
+    <title>Budget App</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,11 +12,11 @@
 
   <body>
   <%- if controller_name != 'trans' %>
-    <header>
+  <header>
   <div>
   <% if user_signed_in? %>
     <nav>
-      <ul class='nav'>
+      <ul class='nav flex'>
         <li><%= link_to '<', root_path %></li>
         <li><%= yield(:title) %></li>
         <li><%= link_to 'Log out', destroy_user_session_path, method: :delete%></li>
