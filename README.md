@@ -33,7 +33,7 @@
 - Then cd into the directory using
 
 ```bash
-> cd budget-app
+> cd budget_capstone
 ```
 #### Step 2:
 
