@@ -141,7 +141,7 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.116);
 }
 
-.form-category>* {
+.form-category > * {
   font-family: "ProximaLight", sans-serif;
   width: 100vw;
   display: block;
